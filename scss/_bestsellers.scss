@@ -5,7 +5,7 @@ h1{
     text-transform: uppercase;
 }
 
-.container{
+.bestseller-container{
     font-size: 1rem;
     text-transform: uppercase;
     position: relative;
@@ -42,7 +42,7 @@ h1{
         text-align: center;
     }
 
-    .container{
+    .bestseller-container{
         display: flex;
         flex-wrap: nowrap;
         justify-content: center;
@@ -86,7 +86,7 @@ h1{
  
 @media (min-width: 767px) and (max-width: 1440px){
 
-    .container{
+    .bestseller-container{
 
         .bestseller-option{
             img{
