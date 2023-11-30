@@ -127,4 +127,80 @@
   width: 100%;
 }
 
+.navbar {
+  background-color: black;
+  padding: 0;
+  color: white;
+}
+
+.container-fluid {
+  background-color: black;
+  padding: 0.8rem 0 0.8rem 0;
+}
+.container-fluid .navbar-brand {
+  padding: 0 0 0 1rem;
+}
+.container-fluid .navbar-toggler {
+  padding: 0.2rem 0.8rem;
+}
+.container-fluid .svg {
+  width: 2rem;
+  height: 2rem;
+}
+.container-fluid button {
+  color: white;
+}
+.container-fluid .navbar-toggler-icon {
+  color: white;
+}
+.container-fluid .navbar-nav {
+  padding: 0.4rem 0.4rem 0 0.4rem;
+  margin: 0.5rem 0.4rem;
+  text-transform: uppercase;
+}
+.container-fluid .navbar-nav :hover {
+  background-color: rgba(168, 168, 168, 0.442);
+}
+.container-fluid .navbar-nav .nav-link {
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+.container-fluid .icon-navigations {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0rem 1.5rem 0 2.2rem;
+  font-size: 1rem;
+}
+.container-fluid .icon-nav-link-search {
+  margin-left: 0.7rem;
+}
+.container-fluid .icon-nav-link-cart {
+  margin-left: 0.6rem;
+}
+
+@media (min-width: 1024px) {
+  .navbar-expand-lg .navbar-collapse {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: right;
+  }
+  .navbar-expand-lg .navbar-collapse .navbar-nav {
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  .container-fluid {
+    padding: 0.5rem 0;
+  }
+}
+body {
+  background-color: white;
+  font-size: 1.5rem;
+  color: black;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /*# sourceMappingURL=styles.css.map */
