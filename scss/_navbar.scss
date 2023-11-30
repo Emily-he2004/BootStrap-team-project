@@ -1,0 +1,85 @@
+
+
+.navbar{
+    background-color: black;
+    padding: 0;
+    color: white;
+}
+
+.container-fluid{
+    background-color: black;
+    padding: .8rem 0 .8rem 0;
+
+    .navbar-brand{
+        padding: 0 0 0 1rem;
+    }
+
+    .navbar-toggler{
+        padding: .2rem .8rem;
+       
+    }
+
+    .svg{
+        width: 2rem;
+        height: 2rem;
+    }
+
+    button{
+        color: white;
+    }
+
+    .navbar-toggler-icon{
+        color: white;
+    }
+
+    .navbar-nav{
+        padding: .4rem .4rem 0 .4rem;
+        margin: .5rem .4rem;
+        text-transform: uppercase;
+    }
+
+    .navbar-nav :hover{
+        background-color:rgba(168, 168, 168, 0.442);
+    }
+
+    .navbar-nav .nav-link{
+        color: white;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+    }
+
+    .icon-navigations{
+        display: flex;
+        flex-wrap: nowrap;
+        margin: 0rem 1.5rem 0 2.2rem;
+        font-size: 1rem;
+    }
+
+    .icon-nav-link-search{
+        margin-left: .7rem;
+    }
+
+    .icon-nav-link-cart{
+        margin-left: .6rem;
+    }
+}
+
+
+@media (min-width:1024px){
+
+    .navbar-expand-lg .navbar-collapse{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: right;
+    }
+
+    .navbar-expand-lg .navbar-collapse .navbar-nav{
+        padding: 0;
+        margin: 0;
+        text-transform: uppercase;
+    }
+
+    .container-fluid{
+        padding: .5rem 0;
+    }
+}
