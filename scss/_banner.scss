@@ -28,7 +28,7 @@ p {
   background-color: $btnColor;
   border: none;
   border-radius: 5px;
-  padding: 1.2rem 0;
+  // padding: 1.2rem 0;
   width: 14rem;
   height: 4rem;
   text-align: center;
@@ -204,5 +204,6 @@ body {
   .logo-slider > div {
     flex: 1 0 50%;
     box-sizing: border-box;
+    padding: 1rem;
   }
 }
