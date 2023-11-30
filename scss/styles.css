@@ -133,65 +133,68 @@
   color: white;
 }
 
-.container-fluid {
+.container-fluid-navbar {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
   background-color: black;
   padding: 0.8rem 0 0.8rem 0;
+  justify-content: space-between;
 }
-.container-fluid .navbar-brand {
-  padding: 0 0 0 1rem;
+.container-fluid-navbar .navbar-brand {
+  padding: 0.2rem 0 0 1rem;
 }
-.container-fluid .navbar-toggler {
+.container-fluid-navbar .navbar-toggler {
   padding: 0.2rem 0.8rem;
 }
-.container-fluid .svg {
+.container-fluid-navbar .svg {
   width: 2rem;
   height: 2rem;
 }
-.container-fluid button {
+.container-fluid-navbar button {
   color: white;
 }
-.container-fluid .navbar-toggler-icon {
+.container-fluid-navbar .navbar-toggler-icon {
   color: white;
 }
-.container-fluid .navbar-nav {
+.container-fluid-navbar .navbar-nav {
   padding: 0.4rem 0.4rem 0 0.4rem;
   margin: 0.5rem 0.4rem;
   text-transform: uppercase;
 }
-.container-fluid .navbar-nav :hover {
+.container-fluid-navbar .navbar-nav :hover {
   background-color: rgba(168, 168, 168, 0.442);
 }
-.container-fluid .navbar-nav .nav-link {
+.container-fluid-navbar .navbar-nav .nav-link {
   color: white;
   padding: 0.5rem 1rem;
   font-size: 1rem;
 }
-.container-fluid .icon-navigations {
+.container-fluid-navbar .icon-navigations {
   display: flex;
   flex-wrap: nowrap;
   margin: 0rem 1.5rem 0 2.2rem;
   font-size: 1rem;
 }
-.container-fluid .icon-nav-link-search {
+.container-fluid-navbar .icon-nav-link-search {
   margin-left: 0.7rem;
 }
-.container-fluid .icon-nav-link-cart {
+.container-fluid-navbar .icon-nav-link-cart {
   margin-left: 0.6rem;
 }
 
 @media (min-width: 1024px) {
-  .navbar-expand-lg .navbar-collapse {
+  .container-fluid-navbar {
+    flex-wrap: nowrap;
+    padding: 0.5rem 0;
+  }
+  .container-fluid-navbar .navbar-brand {
+    padding: 1rem 0 0 1rem;
+  }
+  .container-fluid-navbar .navbar-options {
     display: flex;
     flex-wrap: nowrap;
     justify-content: right;
-  }
-  .navbar-expand-lg .navbar-collapse .navbar-nav {
-    padding: 0;
-    margin: 0;
-    text-transform: uppercase;
-  }
-  .container-fluid {
-    padding: 0.5rem 0;
   }
 }
 h1 {

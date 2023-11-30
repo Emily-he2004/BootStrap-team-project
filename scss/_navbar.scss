@@ -6,12 +6,17 @@
     color: white;
 }
 
-.container-fluid{
+.container-fluid-navbar{
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 100%;
     background-color: black;
     padding: .8rem 0 .8rem 0;
+    justify-content: space-between;
 
     .navbar-brand{
-        padding: 0 0 0 1rem;
+        padding: .2rem 0 0 1rem;
     }
 
     .navbar-toggler{
@@ -67,19 +72,31 @@
 
 @media (min-width:1024px){
 
-    .navbar-expand-lg .navbar-collapse{
-        display: flex;
+    
+    .container-fluid-navbar{
         flex-wrap: nowrap;
-        justify-content: right;
-    }
-
-    .navbar-expand-lg .navbar-collapse .navbar-nav{
-        padding: 0;
-        margin: 0;
-        text-transform: uppercase;
-    }
-
-    .container-fluid{
         padding: .5rem 0;
+
+        .navbar-brand{
+            padding: 1rem 0 0 1rem;
+        }        
+
+        .navbar-options{
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: right;
+        }
+
+        // .navbar-expand-lg .navbar-collapse{
+        //     display: flex;
+        //     flex-wrap: nowrap;
+        //     justify-content: right;
+        // }
+    
+        // .navbar-expand-lg .navbar-collapse .navbar-nav{
+        //     padding: 0;
+        //     margin: 0;
+        //     text-transform: uppercase;
+        // }
     }
 }
