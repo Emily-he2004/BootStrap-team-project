@@ -276,6 +276,203 @@ h1 {
     width: 7.5rem;
   }
 }
+h2 {
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: #4e4e4e;
+  overflow-wrap: break-word;
+}
+
+p {
+  color: #908b8b;
+  font-size: clamp(1rem, 3vw, 2rem);
+  text-align: left;
+  padding-right: 1rem;
+}
+
+.btn-shop {
+  color: #fff;
+  background-color: #e68e00;
+  border: none;
+  border-radius: 5px;
+  padding: 1.2rem 0;
+  width: 14rem;
+  height: 4rem;
+  text-align: center;
+}
+
+@media (min-width: 850px) {
+  .slide-title {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1000px) {
+  .slide-title {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 2.5rem;
+  }
+}
+body {
+  background-color: #ffffff;
+  color: #242424;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #e68e00;
+  background-clip: border-box;
+  border-radius: 50%;
+  width: 15px;
+  margin: 0 6px;
+  border-bottom: 3px solid transparent;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23e68e00'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z' stroke='%23e68e00' stroke-width='2'/%3e%3c/svg%3e");
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23e68e00'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z' stroke='%23e68e00' stroke-width='2'/%3e%3c/svg%3e");
+}
+
+.carousel-caption {
+  position: absolute;
+  max-height: max-content;
+  top: 2.5rem;
+  right: 0;
+  left: 60%;
+  padding: 1.5rem 0rem 2rem 2rem;
+  color: #454545;
+  background: rgba(220, 220, 220, 0.7098039216);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.slide-content {
+  text-transform: none;
+}
+
+.col img {
+  order: 2;
+}
+
+.col h4 {
+  order: 1;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.image-container h5 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  word-wrap: break-word;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1.25rem;
+  overflow: hidden;
+}
+
+@media (min-width: 446px) {
+  .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23e68e00' width='80' height='80'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z' stroke='%23e68e00' stroke-width='2'/%3e%3c/svg%3e");
+  }
+  .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23e68e00' width='80' height='80'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z' stroke='%23e68e00' stroke-width='2'/%3e%3c/svg%3e");
+  }
+  .col-sm-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+  .bs-show {
+    flex-direction: column;
+  }
+  .col img {
+    order: 1;
+  }
+  .col h4 {
+    order: 2;
+  }
+}
+.section_title {
+  text-align: center;
+  font-weight: 100;
+  font-size: 3em;
+  margin: 0 0 1em 0;
+  color: #666666;
+  text-transform: uppercase;
+}
+
+.logo-slider {
+  margin: 20px 0;
+}
+.logo-slider img {
+  width: 100%;
+  height: auto;
+}
+.logo-slider .slick-slide {
+  margin: 0 2em;
+  padding-top: 20px;
+}
+
+.logo-slider .slick-next::before {
+  content: "\f105";
+  font-family: "FontAwesome";
+  font-size: 40px;
+  color: #fc851e;
+  font-weight: 100;
+}
+
+.logo-slider .slick-prev::before {
+  content: "\f104";
+  font-family: "FontAwesome";
+  font-size: 40px;
+  color: #fc851e;
+  font-weight: 100;
+}
+
+@media (max-width: 576px) {
+  .logo-slider {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 1000px;
+  }
+  .logo-slider > div {
+    flex: 1 0 50%;
+    box-sizing: border-box;
+  }
+}
 body {
   background-color: white;
   font-size: 1.5rem;
