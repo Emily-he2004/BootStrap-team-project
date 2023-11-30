@@ -1,13 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boostrap</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- Font Awesome CDN -->
+   <link href="font-awesome/css/fontawesome.css" rel="stylesheet">
+   <link href="font-awesome/css/brands.css" rel="stylesheet">
+   <link href="font-awesome/css/solid.css" rel="stylesheet">
+   <link href="font-awesome/css/regular.css" rel="stylesheet">
+
+
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="styles/custom.css">
+
+   <title>Document</title>
 </head>
 <body>
-    <main>
-        <h1>Testing123...</h1>
-    </main>
+
+
+   <section class="video-image-container">
+      <div class="img-button-container">
+         <p>THIS IS AUDIO ENGINE</p>
+         <!-- Button trigger modal -->
+         <img src="images/bg-this-is-audio-engine-section.jpg" alt="Video image">
+         <button type="button" class="btn play-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <i class="fa-solid fa-play"></i>
+         </button>
+      </div>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
+         <div class="modal-dialog modal-dialog-centered video-container" >
+            <div class="modal-content">
+               <div class="modal-body">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">CLOSE</button>
+                  <video id="video" playsinline controls>
+                     <source src="media/this-is-audioengine.mp4" type="video/mp4">
+                     "Your browser does not support the video element."
+                  </video>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="back-to-top container-fluid" >
+      <div class="row">
+         <a href="#">
+            <i class="fa-solid fa-arrow-up"></i>
+            <div>TOP</div>
+         </a>
+   </section>
+
+
+   
+   <footer>
+
+      <div class="container-fluid text-center social-media">
+         <div class="row icons">
+           <div class="col-auto me-auto">
+            <div class="icon-background">
+               <i class="fa-brands fa-facebook-f"></i>
+            </div>
+            <div class="icon-background">
+               <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="icon-background">
+               <i class="fa-brands fa-pinterest"></i>
+            </div>
+            <div class="icon-background">
+               <i class="fa-brands fa-youtube"></i>
+            </div>
+           </div>
+           <div class="col-auto email">
+            <div>
+               <i class="fa-regular fa-envelope"></i>
+            </div>
+            <div>
+               EMAIL SIGN UP
+            </div>
+           </div>
+         </div>
+       </div>
+
+      <div class="footer-color">
+         <div class="container-fluid footer-content">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+               <div class="col">
+                  <p>Speakers</p>
+                  <p>Components</p>
+                  <p>Refurbished</p>
+                  <p>Find A Store</p>
+               </div>
+               <div class="col">
+                  <p>Support</p>
+                  <p>Explore</p>
+                  <p>About</p>
+                  <p>Contact</p>
+               </div>
+               <div class="col">
+                  <p>Press</p>
+                  <p>Warranty</p>
+                  <p>Military</p>
+                  <p>Apps</p>
+               </div>
+               <div class="col">
+                  <p>Privacy</p>
+                  <p>Terms</p>
+                  <p>Legal</p>
+                  <p>News</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+   <!-- jQuery -->
+   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+  <!-- Slick JS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+               
+   
+   <script src="script/script.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
