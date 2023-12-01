@@ -51,3 +51,52 @@ document.addEventListener("DOMContentLoaded", function () {
     initSlider();
   });
 });
+document.addEventListener('DOMContentLoaded', function () {
+  function initSlider() {
+      if (window.innerWidth > 576) {
+          $('.logo-slider-1').slick({
+              slidesToShow: 5,
+              slidesToScroll: 1,
+              lazyLoad: 'ondemand',
+              responsive: [
+                  {
+                      breakpoint: 1200,
+                      settings: {
+                          slidesToShow: 4
+                      }
+                  },
+                  {
+                      breakpoint: 992,
+                      settings: {
+                          slidesToShow: 3
+                      }
+                  },
+                  {
+                      breakpoint: 768,
+                      settings: {
+                          slidesToShow: 2
+                      }
+                  },
+                  {
+                      breakpoint: 576,
+                      settings: {
+                          slidesToShow: 1,
+                          arrows: false,
+                          dots: true
+                      }
+                  }
+              ]
+          });
+      }
+  }
+
+
+  initSlider();
+
+  window.addEventListener('resize', function () {
+   if ($('.logo-slider-1').hasClass('slick-initialized')) {
+          $('.logo-slider-1').slick('unslick');
+      }
+initSlider();
+  });
+});

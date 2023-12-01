@@ -1,0 +1,56 @@
+@mixin font-awesome-arrow($unicode, $color: #FC851E, $size: 40px) {
+    content: $unicode;
+    font-family: "FontAwesome";
+    font-size: $size;
+    color: $color;
+    font-weight: 100;
+  }
+  
+  // Define mixin for common styles in the logo slider
+  @mixin logo-slider-styles {
+    margin: 20px 0;
+    img {
+      width: 100%;
+      height: auto;
+    }
+    .slick-slide {
+      margin: 0 2em;
+      padding-top: 20px;
+    }
+  }
+  
+  .section_title {
+    text-align: center;
+    font-weight: 100;
+    font-size: 3em;
+    margin: 0 0 1em 0;
+    color: #666666;
+    text-transform: uppercase;
+  }
+  
+  .logo-slider-1 {
+    @include logo-slider-styles;
+  }
+  
+  .logo-slider-1 .slick-next::before {
+    @include font-awesome-arrow("\f105");
+  }
+  
+  .logo-slider-1 .slick-prev::before {
+    @include font-awesome-arrow("\f104");
+  }
+  
+  @media (max-width: 576px) {
+    .logo-slider-1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 1000px;
+  
+     
+      // img {
+      //     width: 100%;
+      // } 
+    }
+  }
