@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .container-fluid {
   max-width: 1400px;
   padding: 2rem 0;
@@ -517,6 +518,96 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 1000px;
+  }
+}
+.items {
+  position: relative;
+}
+
+.box {
+  border: solid black 1px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  padding: auto;
+  margin: auto;
+  height: max-content;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+}
+
+.our-story {
+  background-color: initial;
+  border: none;
+  text-align: center;
+  max-width: 70%;
+  right: 0;
+  left: 0;
+}
+
+.our-story p {
+  font-size: 1.2rem;
+}
+
+.mobile {
+  display: none;
+}
+
+.tablet {
+  display: none;
+}
+
+@media (max-width: 32.8125rem) {
+  .mobile-phone {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+  .image-container-dale {
+    position: relative;
+  }
+  .image-container-dale::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* 这里的 rgba 控制蒙版的颜色和透明度 */
+  }
+  /* 图片样式 */
+  .image-container-dale img {
+    display: block;
+    width: 100%; /* 保证图片充满容器 */
+    height: auto; /* 保持宽高比 */
+  }
+  .box {
+    background-color: initial;
+    border: none;
+    top: 0;
+    bottom: initial;
+    right: initial;
+  }
+  .our-story {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    max-width: 100%;
+  }
+}
+@media (min-width: 32.8125rem) and (max-width: 50rem) {
+  .tablet {
+    display: block;
+  }
+  .story-desktop {
+    display: none;
+  }
+  .story-mobile {
+    display: none;
   }
 }
 body {
