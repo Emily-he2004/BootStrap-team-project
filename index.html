@@ -1,120 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-   <!-- Font Awesome CDN -->
-   <!-- <link href="font-awesome/css/fontawesome.css" rel="stylesheet">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font Awesome CDN -->
+  <!-- <link href="font-awesome/css/fontawesome.css" rel="stylesheet">
    <link href="font-awesome/css/brands.css" rel="stylesheet">
    <link href="font-awesome/css/solid.css" rel="stylesheet">
    <link href="font-awesome/css/regular.css" rel="stylesheet"> -->
-   <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-      integrity="sha512-..."
-      crossorigin="anonymous"
-    />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-..." crossorigin="anonymous" />
 
 
-   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-   <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
-    />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 
-   <link rel="stylesheet" href="css/bootstrap.min.css">
-   <link rel="stylesheet" href="scss/styles.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="scss/styles.css">
 
-   <title>Document</title>
+  <title>Audioengine</title>
 </head>
+
 <body>
-   <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid-navbar">
-          <a class="navbar-brand" href="#">
-            <img src="images/logo-audioengine.png" alt="">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <svg class="svg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50"
-            style="fill:#FFFFFF;">
-            <path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"></path>
-            </svg>        </button>
-          <div class="navbar-options collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link" aria-current="page" href="#">Speakers</a>
-              <a class="nav-link" href="#">Components</a>
-              <a class="nav-link" href="#">Deals</a>
-              <a class="nav-link" href="#">Explore</a>
-              <a class="nav-link" href="#">Support</a>
-            </div>
-              <div class="icon-navigations">
-                <a class="icon-nav-link-map" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>   
-                </a>
-                <a class="icon-nav-link-search" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg></a>
-                <a class="icon-nav-link-cart" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg></a>
-              </div>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid-navbar">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo-audioengine.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <svg class="svg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100"
+            viewBox="0 0 50 50" style="fill:#FFFFFF;">
+            <path
+              d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z">
+            </path>
+          </svg>
+        </button>
+        <div class="navbar-options collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" aria-current="page" href="#">Speakers</a>
+            <a class="nav-link" href="#">Components</a>
+            <a class="nav-link" href="#">Deals</a>
+            <a class="nav-link" href="#">Explore</a>
+            <a class="nav-link" href="#">Support</a>
+          </div>
+          <div class="icon-navigations">
+            <a class="icon-nav-link-map" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <style>
+                  svg {
+                    fill: #ffffff
+                  }
+                </style>
+                <path
+                  d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+              </svg>
+            </a>
+            <a class="icon-nav-link-search" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <style>
+                  svg {
+                    fill: #ffffff
+                  }
+                </style>
+                <path
+                  d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+              </svg></a>
+            <a class="icon-nav-link-cart" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <style>
+                  svg {
+                    fill: #ffffff
+                  }
+                </style>
+                <path
+                  d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
+              </svg></a>
           </div>
         </div>
-      </nav>
-    </header>
-  
-   <main>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Section 1: Hero slider -->
     <div id="carouselExampleIndicators" class="carousel slide carousel-fade">
       <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="3"
-          aria-label="Slide 4"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="4"
-          aria-label="Slide 5"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="5"
-          aria-label="Slide 6"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="6"
-          aria-label="Slide 7"
-        ></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1">
+        </button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2">
+        </button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3">
+        </button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4">
+        </button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5">
+        </button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6">
+        </button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7">
+        </button>
       </div>
+
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img
-            src="images/banner-01-speaker-black.jpg"
-            class="d-block w-100"
-            alt="..."
-          />
+          <img src="images/banner-01-speaker-black.jpg" class="d-block w-100" alt="..." />
           <div class="carousel-caption d-none d-md-block">
             <h2 class="slide-title">spotify, pandora</h2>
             <p class="slide-content">
@@ -124,11 +119,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img
-            src="images/banner-02-bluetooth-receiver.jpg"
-            class="d-block w-100"
-            alt="..."
-          />
+          <img src="images/banner-02-bluetooth-receiver.jpg" class="d-block w-100" alt="..." />
           <div class="carousel-caption d-none d-md-block">
             <h2 class="slide-title">WHY IS THE BI SO IMPRESSIVE</h2>
             <p class="slide-content">See for yourself</p>
@@ -136,11 +127,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img
-            src="images/banner-03-speaker-brown.jpg"
-            class="d-block w-100"
-            alt="..."
-          />
+          <img src="images/banner-03-speaker-brown.jpg" class="d-block w-100" alt="..." />
           <div class="carousel-caption d-none d-md-block">
             <h2 class="slide-title">WE'VE GOT YOU COVERED</h2>
             <p class="slide-content">
@@ -150,11 +137,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img
-            src="images/banner-04-speaker-brown.jpg"
-            class="d-block w-100"
-            alt="..."
-          />
+          <img src="images/banner-04-speaker-brown.jpg" class="d-block w-100" alt="..." />
           <div class="carousel-caption d-none d-md-block">
             <h2 class="slide-title">WHY IS</h2>
             <p class="slide-content">
@@ -164,11 +147,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img
-            src="images/banner-05-speaker-red.jpg"
-            class="d-block w-100"
-            alt="..."
-          />
+          <img src="images/banner-05-speaker-red.jpg" class="d-block w-100" alt="..." />
           <div class="carousel-caption d-none d-md-block">
             <h2 class="slide-title">SET UP IN SECONDS</h2>
             <p class="slide-content">Some representative placeholder.</p>
@@ -176,11 +155,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img
-            src="images/banner-06-speaker-black.jpg"
-            class="d-block w-100"
-            alt="..."
-          />
+          <img src="images/banner-06-speaker-black.jpg" class="d-block w-100" alt="..." />
           <div class="carousel-caption d-none d-md-block">
             <h2 class="slide-title">First slide</h2>
             <p class="slide-content">Content for the first slide.</p>
@@ -188,11 +163,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <img
-            src="images/banner-07-speaker-white.jpg"
-            class="d-block w-100"
-            alt="..."
-          />
+          <img src="images/banner-07-speaker-white.jpg" class="d-block w-100" alt="..." />
           <div class="carousel-caption d-none d-md-block">
             <h2 class="slide-title">SET UP IN SECONDS</h2>
             <p class="slide-content">
@@ -202,374 +173,304 @@
           </div>
         </div>
       </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="prev"
-      >
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="next"
-      >
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-    <div class="new-section">
-      <div class="d-flex flex-column mb-3 container-xxl" >
-         <div class=" m-auto items" >
-             
-             <img class="img-fluid desktop" src="./images/bg-all-new-section.jpg">
-             <div class="image-container-dale">
-                 <img class="img-fluid mobile" src="./images/bg-all-new-section-phone-square.jpg">
-              </div>
-             <div class="box">
-             
-                 
-                 <h2 class="text-start">ALL NEW</h2>
-                 <p class="text-start">The A5+ Wireless Speakers</p>
-                 <button type="button" class="btn btn-light btn-lg">Learn More</button>
-             
-             
-         </div>
-         </div>
-         <div class=" m-auto items">
-             <img class="img-fluid desktop" src="./images/bg-feeling-lucky-section.jpg">
-             <div class="image-container-dale">
-                 <img class="img-fluid mobile" src="./images/bg-feeling-lucky-section-phone-square.jpg">
-               </div>
-  
-             <div class="box">
-  
-                 <h2 class="text-start">FEELING LUCKY</h2>
-                 <p class="text-start">The A5+ Wireless Speakers</p>
-                 <button type="button" class="btn btn-light btn-lg">Learn More</button>
-  
-             </div>
-         </div>
-         <div class="m-auto items" >
-             <img  class="img-fluid desktop story-desktop" src="./images/bg-our-story-section.jpg">
-  
-             <div class="image-container-dale">
-                 <img class="img-fluid mobile story-mobile" src="./images/bg-our-story-section-phone-square.jpg">
-             
-             </div>
-  
-             <img class="img-fluid tablet" src="./images/bg-our-story-section-tablet.jpg">
-  
-             <div class="box our-story">
-  
-                 <h2 class="text-center">OUR STORY</h2>
-                 <p class="text-center">Audioengine was founded with a simple goal.Build a speaker that sounds great, is easy to set up and use, and that makes people want to listen to music every day.</p>
-                 <button type="button" class="btn btn-warning btn-lg story">Learn More</button>
-  
-             </div>
-  
-         </div>
-  
-         
-       </div>
-    </div>
+
+    <!-- Section 2: Bestsellers -->
     <h2>Bestsellers</h2>
-      <div class="bestseller-container">
-        <div class="row justify-content-center">
-                
-          <div class="bestseller-option">
-            <p class="order-md-2">A2+ Desktop Speakers</p>
-            <img class="order-md-1" src="images/best-seller-01-speaker-red.jpg" alt="best desktop speaker">
-            <button type="button" class="btn">Shop Now</button>
-          </div>     
-               
-          <div class="bestseller-option">
-            <p class="order-md-2">B1 Bluetooth music receiver</p>
-            <img class="order-md-1" src="images/best-seller-02-bluetooth-receiver.jpg" alt="Bluetooth music receiver">
-            <button type="button" class="btn">Shop Now</button>
-          </div>
-                
-          <div class="bestseller-option">
-            <p class="order-md-2">A5+ Wireless Speakers</p>
-            <img class="order-md-1" src="images/best-seller-03-speaker-black.jpg" alt="wireless speakers">
-            <button type="button" class="btn">Shop Now</button>                
-          </div>
-                
+    <div class="bestseller-container">
+      <div class="row justify-content-center">
+        <div class="bestseller-option">
+          <p class="order-md-2">A2+ Desktop Speakers</p>
+          <img class="order-md-1" src="images/best-seller-01-speaker-red.jpg" alt="best desktop speaker">
+          <button type="button" class="btn">Shop Now</button>
+        </div>
+
+        <div class="bestseller-option">
+          <p class="order-md-2">B1 Bluetooth music receiver</p>
+          <img class="order-md-1" src="images/best-seller-02-bluetooth-receiver.jpg" alt="Bluetooth music receiver">
+          <button type="button" class="btn">Shop Now</button>
+        </div>
+
+        <div class="bestseller-option">
+          <p class="order-md-2">A5+ Wireless Speakers</p>
+          <img class="order-md-1" src="images/best-seller-03-speaker-black.jpg" alt="wireless speakers">
+          <button type="button" class="btn">Shop Now</button>
         </div>
       </div>
+    </div>
 
-      <h2 class="section_title">SHOP BY ROOM OR DEVICE</h2>
-      <div class="container">
-        <div class="logo-slider">
-          <div class="room-shop">
-            <div class="image-container">
-              <img
-                src="images/shop-slider-01-speaker-white.jpg"
-                class=""
-                alt="..."
-              />
-              <h5 class="text-center">with sonos</h5>
-            </div>
+    <!-- Section 3: Products slider (slick #1) -->
+    <h2 class="section_title">SHOP BY ROOM OR DEVICE</h2>
+    <div class="container">
+      <div class="logo-slider">
+        <div class="room-shop">
+          <div class="image-container">
+            <img src="images/shop-slider-01-speaker-white.jpg" class="" alt="..." />
+            <h5 class="text-center">with sonos</h5>
           </div>
-  
-          <div>
-            <div class="image-container">
-              <img
-                src="images/shop-slider-02-speaker-brown.jpg"
-                class=""
-                alt="..."
-              />
-              <h5 class="text-center">with siri</h5>
-            </div>
+        </div>
+
+        <div>
+          <div class="image-container">
+            <img src="images/shop-slider-02-speaker-brown.jpg" class="" alt="..." />
+            <h5 class="text-center">with siri</h5>
           </div>
-          <div>
-            <div class="image-container">
-              <img
-                src="images/shop-slider-03-speakers-brown.jpg"
-                class=""
-                alt="..."
-              />
-              <h5 class="text-center">with a turntable</h5>
-            </div>
+        </div>
+        <div>
+          <div class="image-container">
+            <img src="images/shop-slider-03-speakers-brown.jpg" class="" alt="..." />
+            <h5 class="text-center">with a turntable</h5>
           </div>
-          <div>
-            <div class="image-container">
-              <img
-                src="images/shop-slider-04-speakers-brown.jpg"
-                class=""
-                alt="..."
-              />
-              <h5 class="text-center">TV ROOM</h5>
-            </div>
+        </div>
+        <div>
+          <div class="image-container">
+            <img src="images/shop-slider-04-speakers-brown.jpg" class="" alt="..." />
+            <h5 class="text-center">TV ROOM</h5>
           </div>
-          <div>
-            <div class="image-container">
-              <img
-                src="images/shop-slider-05-speakers-brown.jpg"
-                class=""
-                alt="..."
-              />
-              <h5 class="text-center">kitchen</h5>
-            </div>
+        </div>
+        <div>
+          <div class="image-container">
+            <img src="images/shop-slider-05-speakers-brown.jpg" class="" alt="..." />
+            <h5 class="text-center">kitchen</h5>
           </div>
-          <div>
-            <div class="image-container">
-              <img
-                src="images/shop-slider-06-speaker-brown.jpg"
-                class=""
-                alt="..."
-              />
-              <h5 class="text-center">patio</h5>
-            </div>
+        </div>
+        <div>
+          <div class="image-container">
+            <img src="images/shop-slider-06-speaker-brown.jpg" class="" alt="..." />
+            <h5 class="text-center">patio</h5>
           </div>
-          <div>
-            <div class="image-container">
-              <img
-                src="images/shop-slider-07-speakers-white.jpg"
-                class=""
-                alt="..."
-              />
-              <h5 class="text-center">office</h5>
-            </div>
+        </div>
+        <div>
+          <div class="image-container">
+            <img src="images/shop-slider-07-speakers-white.jpg" class="" alt="..." />
+            <h5 class="text-center">office</h5>
           </div>
-          <div>
-            <div class="image-container">
-              <img
-                src="images/shop-slider-08-speakers-white.jpg"
-                class=""
-                alt="..."
-              />
-              <h5 class="text-center">bedroom</h5>
-            </div>
+        </div>
+        <div>
+          <div class="image-container">
+            <img src="images/shop-slider-08-speakers-white.jpg" class="" alt="..." />
+            <h5 class="text-center">bedroom</h5>
           </div>
-          <div>
-            <div class="image-container">
-              <img
-                src="images/shop-slider-09-speaker-brown.jpg"
-                class=""
-                alt="..."
-              />
-              <h5 class="text-center">with</h5>
-            </div>
+        </div>
+        <div>
+          <div class="image-container">
+            <img src="images/shop-slider-09-speaker-brown.jpg" class="" alt="..." />
+            <h5 class="text-center">with</h5>
           </div>
         </div>
       </div>
+    </div>
 
-      <h2 class="section_title">In The News</h2>
+    <!-- Section 4: Story & Products ('About' imgs + text) -->
+    <div class="new-section">
+      <div class="d-flex flex-column mb-3 container-xxl">
+        <div class=" m-auto items">
 
-      <div class="container">
-        <div class="logo-slider-1">
-          <div>
-            <img
-              src="images/in-the-news-slider-01-rolling-stone.jpg"
-              alt="Brand 1"
-            />
+          <img class="img-fluid desktop" src="./images/bg-all-new-section.jpg">
+          <div class="image-container-dale">
+            <img class="img-fluid mobile" src="./images/bg-all-new-section-phone-square.jpg">
           </div>
-          <div>
-            <img
-              src="images/in-the-news-slider-02-mens-health.jpg"
-              alt="Brand 2"
-            />
+          <div class="box">
+
+
+            <h2 class="text-start">ALL NEW</h2>
+            <p class="text-start">The A5+ Wireless Speakers</p>
+            <button type="button" class="btn btn-light btn-lg">Learn More</button>
+
+
           </div>
-          <div>
-            <img
-              src="images/in-the-news-slider-03-forbes-life.jpg"
-              alt="Brand 3"
-            />
+        </div>
+        <div class=" m-auto items">
+          <img class="img-fluid desktop" src="./images/bg-feeling-lucky-section.jpg">
+          <div class="image-container-dale">
+            <img class="img-fluid mobile" src="./images/bg-feeling-lucky-section-phone-square.jpg">
           </div>
-          <div>
-            <img
-              src="images/in-the-news-slider-04-chicago-tribune.jpg"
-              alt="Brand 4"
-            />
+
+          <div class="box">
+
+            <h2 class="text-start">FEELING LUCKY</h2>
+            <p class="text-start">The A5+ Wireless Speakers</p>
+            <button type="button" class="btn btn-light btn-lg">Learn More</button>
+
           </div>
-          <div>
-            <img
-              src="images/in-the-news-slider-05-gear-patrol.jpg"
-              alt="Brand 5"
-            />
+        </div>
+        <div class="m-auto items">
+          <img class="img-fluid desktop story-desktop" src="./images/bg-our-story-section.jpg">
+
+          <div class="image-container-dale">
+            <img class="img-fluid mobile story-mobile" src="./images/bg-our-story-section-phone-square.jpg">
+
           </div>
-          <div>
-            <img
-              src="images/in-the-news-slider-06-sound-guys.jpg"
-              alt="Brand 6"
-            />
+
+          <img class="img-fluid tablet" src="./images/bg-our-story-section-tablet.jpg">
+
+          <div class="box our-story">
+
+            <h2 class="text-center">OUR STORY</h2>
+            <p class="text-center">Audioengine was founded with a simple goal.Build a speaker that sounds great, is easy
+              to set up and use, and that makes people want to listen to music every day.</p>
+            <button type="button" class="btn btn-warning btn-lg story">Learn More</button>
+
           </div>
-          <div>
-            <img
-              src="images/in-the-news-slider-07-wired.jpg"
-              alt="Brand 7"
-            />
-          </div>
-          <div>
-            <img
-              src="images/in-the-news-slider-08-cnet.jpg"
-              alt="Brand 8"
-            />
-          </div>
-          <div>
-            <img
-              src="images/in-the-news-slider-09-gq.jpg"
-              alt="Brand 9"
-            />
-          </div>
-          <div>
-            <img
-              src="images/in-the-news-slider-10-pc-magazine.jpg"
-              alt="Brand 10"
-            />
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 5: News slider (slick #2) -->
+    <h2 class="section_title">In The News</h2>
+    <div class="container">
+      <div class="logo-slider-1">
+        <div>
+          <img src="images/in-the-news-slider-01-rolling-stone.jpg" alt="Brand 1" />
+        </div>
+        <div>
+          <img src="images/in-the-news-slider-02-mens-health.jpg" alt="Brand 2" />
+        </div>
+        <div>
+          <img src="images/in-the-news-slider-03-forbes-life.jpg" alt="Brand 3" />
+        </div>
+        <div>
+          <img src="images/in-the-news-slider-04-chicago-tribune.jpg" alt="Brand 4" />
+        </div>
+        <div>
+          <img src="images/in-the-news-slider-05-gear-patrol.jpg" alt="Brand 5" />
+        </div>
+        <div>
+          <img src="images/in-the-news-slider-06-sound-guys.jpg" alt="Brand 6" />
+        </div>
+        <div>
+          <img src="images/in-the-news-slider-07-wired.jpg" alt="Brand 7" />
+        </div>
+        <div>
+          <img src="images/in-the-news-slider-08-cnet.jpg" alt="Brand 8" />
+        </div>
+        <div>
+          <img src="images/in-the-news-slider-09-gq.jpg" alt="Brand 9" />
+        </div>
+        <div>
+          <img src="images/in-the-news-slider-10-pc-magazine.jpg" alt="Brand 10" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 6: Video -->
+    <section class="video-image-container">
+      <div class="img-button-container">
+        <p>THIS IS AUDIO ENGINE</p>
+        <!-- Button trigger modal -->
+        <img src="images/bg-this-is-audio-engine-section.jpg" alt="Video image">
+        <button type="button" class="btn play-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <i class="fa-solid fa-play"></i>
+        </button>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+        data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered video-container">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">CLOSE</button>
+              <video id="video" playsinline controls>
+                <source src="media/this-is-audioengine.mp4" type="video/mp4">
+                "Your browser does not support the video element."
+              </video>
+            </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <section class="video-image-container">
-        <div class="img-button-container">
-           <p>THIS IS AUDIO ENGINE</p>
-           <!-- Button trigger modal -->
-           <img src="images/bg-this-is-audio-engine-section.jpg" alt="Video image">
-           <button type="button" class="btn play-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-              <i class="fa-solid fa-play"></i>
-           </button>
+    <section class="back-to-top container-fluid">
+      <div class="row">
+        <a href="#">
+          <i class="fa-solid fa-arrow-up"></i>
+          <div>TOP</div>
+        </a>
+    </section>
+  </main>
+
+  <footer>
+
+    <div class="container-fluid text-center social-media">
+      <div class="row icons">
+        <div class="col-auto me-auto">
+          <div class="icon-background">
+            <i class="fa-brands fa-facebook-f"></i>
+          </div>
+          <div class="icon-background">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <div class="icon-background">
+            <i class="fa-brands fa-pinterest"></i>
+          </div>
+          <div class="icon-background">
+            <i class="fa-brands fa-youtube"></i>
+          </div>
         </div>
-     
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
-           <div class="modal-dialog modal-dialog-centered video-container" >
-              <div class="modal-content">
-                 <div class="modal-body">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">CLOSE</button>
-                    <video id="video" playsinline controls>
-                       <source src="media/this-is-audioengine.mp4" type="video/mp4">
-                       "Your browser does not support the video element."
-                    </video>
-                 </div>
-              </div>
-           </div>
+        <div class="col-auto email">
+          <div>
+            <i class="fa-regular fa-envelope"></i>
+          </div>
+          <div>
+            EMAIL SIGN UP
+          </div>
         </div>
-     </section>
-
-     <section class="back-to-top container-fluid" >
-        <div class="row">
-           <a href="#">
-              <i class="fa-solid fa-arrow-up"></i>
-              <div>TOP</div>
-           </a>
-     </section>
-   </main>
-
-   <footer>
-
-      <div class="container-fluid text-center social-media">
-         <div class="row icons">
-           <div class="col-auto me-auto">
-            <div class="icon-background">
-               <i class="fa-brands fa-facebook-f"></i>
-            </div>
-            <div class="icon-background">
-               <i class="fa-brands fa-instagram"></i>
-            </div>
-            <div class="icon-background">
-               <i class="fa-brands fa-pinterest"></i>
-            </div>
-            <div class="icon-background">
-               <i class="fa-brands fa-youtube"></i>
-            </div>
-           </div>
-           <div class="col-auto email">
-            <div>
-               <i class="fa-regular fa-envelope"></i>
-            </div>
-            <div>
-               EMAIL SIGN UP
-            </div>
-           </div>
-         </div>
-       </div>
-
-      <div class="footer-color">
-         <div class="container-fluid footer-content">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
-               <div class="col">
-                  <p>Speakers</p>
-                  <p>Components</p>
-                  <p>Refurbished</p>
-                  <p>Find A Store</p>
-               </div>
-               <div class="col">
-                  <p>Support</p>
-                  <p>Explore</p>
-                  <p>About</p>
-                  <p>Contact</p>
-               </div>
-               <div class="col">
-                  <p>Press</p>
-                  <p>Warranty</p>
-                  <p>Military</p>
-                  <p>Apps</p>
-               </div>
-               <div class="col">
-                  <p>Privacy</p>
-                  <p>Terms</p>
-                  <p>Legal</p>
-                  <p>News</p>
-               </div>
-            </div>
-         </div>
       </div>
-   </footer>
+    </div>
 
-   <!-- jQuery -->
-   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <div class="footer-color">
+      <div class="container-fluid footer-content">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+          <div class="col">
+            <p>Speakers</p>
+            <p>Components</p>
+            <p>Refurbished</p>
+            <p>Find A Store</p>
+          </div>
+          <div class="col">
+            <p>Support</p>
+            <p>Explore</p>
+            <p>About</p>
+            <p>Contact</p>
+          </div>
+          <div class="col">
+            <p>Press</p>
+            <p>Warranty</p>
+            <p>Military</p>
+            <p>Apps</p>
+          </div>
+          <div class="col">
+            <p>Privacy</p>
+            <p>Terms</p>
+            <p>Legal</p>
+            <p>News</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
   <!-- Slick JS -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-               
-   
-   <script src="script/script.js"></script>
-   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="script/script.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
