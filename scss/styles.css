@@ -301,6 +301,9 @@ body {
   margin: 1rem 0;
   padding: 0.5rem 0 0 1.5rem;
 }
+.bestseller-container button:hover {
+  background-color: orange;
+}
 .bestseller-container button {
   position: sticky;
   right: 0;
