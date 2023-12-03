@@ -1,11 +1,11 @@
-@use "footer";
-@use "video";
 @use "variable";
 @use "navbar";
-@use "bestsellers";
 @use "banner";
+@use "bestsellers";
 @use "slider-news";
 @use "newsections.scss";
+@use "video";
+@use "footer";
 
 body {
   background-color: white;
