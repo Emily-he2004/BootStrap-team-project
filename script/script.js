@@ -6,34 +6,34 @@ btnClose.addEventListener("click", () => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  function initSlider() {
+  function initSlider(className, slidesToShow) {
     if (window.innerWidth > 576) {
-      $(".logo-slider").slick({
-        slidesToShow: 5,
+      $(className).slick({
+        slidesToShow: slidesToShow,
         slidesToScroll: 1,
         responsive: [
           {
             breakpoint: 1200,
             settings: {
-              slidesToShow: 5,
+              slidesToShow: slidesToShow,
             },
           },
           {
             breakpoint: 992,
             settings: {
-              slidesToShow: 4,
+              slidesToShow: slidesToShow - 1,
             },
           },
           {
             breakpoint: 768,
             settings: {
-              slidesToShow: 3,
+              slidesToShow: slidesToShow - 2,
             },
           },
           {
             breakpoint: 576,
             settings: {
-              slidesToShow: 2,
+              slidesToShow: slidesToShow - 3,
               arrows: false,
             },
           },
@@ -42,61 +42,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  initSlider();
+  initSlider(".shop-room", 5);
+  initSlider(".logo-slider", 4);
 
   window.addEventListener("resize", function () {
-    if ($(".logo-slider").hasClass("slick-initialized")) {
-      $(".logo-slider").slick("unslick");
-    }
-    initSlider();
-  });
-});
-document.addEventListener('DOMContentLoaded', function () {
-  function initSlider() {
-      if (window.innerWidth > 576) {
-          $('.logo-slider-1').slick({
-              slidesToShow: 5,
-              slidesToScroll: 1,
-              lazyLoad: 'ondemand',
-              responsive: [
-                  {
-                      breakpoint: 1200,
-                      settings: {
-                          slidesToShow: 4
-                      }
-                  },
-                  {
-                      breakpoint: 992,
-                      settings: {
-                          slidesToShow: 3
-                      }
-                  },
-                  {
-                      breakpoint: 768,
-                      settings: {
-                          slidesToShow: 2
-                      }
-                  },
-                  {
-                      breakpoint: 576,
-                      settings: {
-                          slidesToShow: 1,
-                          arrows: false,
-                          dots: true
-                      }
-                  }
-              ]
-          });
-      }
-  }
-
-
-  initSlider();
-
-  window.addEventListener('resize', function () {
-   if ($('.logo-slider-1').hasClass('slick-initialized')) {
-          $('.logo-slider-1').slick('unslick');
-      }
-initSlider();
+    $(".shop-room, .logo-slider").slick("unslick");
+    initSlider(".shop-room", 5);
+    initSlider(".logo-slider", 4);
   });
 });

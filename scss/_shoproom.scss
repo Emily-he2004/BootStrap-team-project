@@ -1,0 +1,70 @@
+$bgc: #ffffff;
+$btnColor: #e68e00;
+$textC: #242424;
+$bgShop: #999999ab;
+
+//Fonts
+// $body-fonts: ;
+$btn-text-color: #fff;
+$content-title: #4e4e4e;
+$content-color: #908b8b;
+
+@mixin font-awesome-arrow($unicode, $color: $btnColor, $size: 40px) {
+  content: $unicode;
+  font-family: "FontAwesome";
+  font-size: $size;
+  color: $color;
+  font-weight: 100;
+}
+
+// Define mixin for common styles in the logo slider
+@mixin logo-slider-styles {
+  margin: 20px 0;
+  img {
+    width: 100%;
+    height: auto;
+  }
+  .slick-slide {
+    margin: 0 2em;
+    padding-top: 20px;
+  }
+}
+
+.title {
+  text-align: center;
+  font-weight: 100;
+  font-size: 2em;
+  margin: 0 0 1em 0;
+  color: $content-color;
+  text-transform: uppercase;
+}
+
+.shop-room {
+  @include logo-slider-styles;
+}
+
+.shop-room .slick-next::before {
+  @include font-awesome-arrow("\f105");
+}
+
+.shop-room .slick-prev::before {
+  @include font-awesome-arrow("\f104");
+}
+
+@media (max-width: 576px) {
+  .shop-room {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 1000px;
+  }
+  .shop-room > div {
+    flex: 1 0 50%;
+    box-sizing: border-box;
+    padding: 1rem;
+  }
+  .title {
+    font-size: 1.5em;
+  }
+}
