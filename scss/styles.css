@@ -76,10 +76,12 @@
   }
 }
 .bestseller-h2 {
-  font-weight: normal;
+  font-weight: 100;
   font-size: 2rem;
-  margin: 1rem 1rem 0 1rem;
+  margin: 0 0 1em 0;
+  color: black;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .bestseller-p {
@@ -179,7 +181,7 @@
     overflow: auto;
   }
   .bestseller-container .bestseller-p {
-    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-size: clamp(0.8rem, 2vw, 1.2rem);
     max-width: 80%;
     text-align: center;
   }
