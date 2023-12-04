@@ -232,6 +232,19 @@
   position: relative;
 }
 
+.items p {
+  font-size: 1.25rem;
+  color: white;
+}
+
+.items h2 {
+  color: white;
+}
+
+.new-section {
+  padding-top: 4.25rem;
+}
+
 .box {
   border: solid black 1px;
   position: absolute;
