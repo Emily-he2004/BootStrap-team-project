@@ -28,10 +28,12 @@ p {
   background-color: $btnColor;
   border: none;
   border-radius: 5px;
-  // padding: 1.2rem 0;
+  padding: 1.2rem 0;
   width: 14rem;
   height: 4rem;
   text-align: center;
+  text-wrap: nowrap;
+  font-size: 1rem;
 }
 
 @media (min-width: 850px) {
