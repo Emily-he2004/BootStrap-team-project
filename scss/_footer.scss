@@ -1,5 +1,18 @@
 @use 'variable' as *;
 
+.back-to-top {
+   margin-top: 2rem;
+   div {
+      display: inline-block;
+   }
+
+   a {
+      text-decoration: none;
+      color: $orange;
+      font-size: $fontsize;
+   }
+}
+
 .container-fluid {
    max-width: 1400px;
    padding: 2rem 0;
@@ -54,7 +67,6 @@
    }
 }
 
-
 .footer-color {
    background-color: rgb(241, 241, 241);
    border-top: 1px solid black;
@@ -67,7 +79,7 @@
             }
          }
    
-         @media (min-width: 510px) {
+         @media (min-width: 520px) {
             .col {
                flex: 0 0 25%;
             }
@@ -76,15 +88,13 @@
    }
 }
 
-.back-to-top {
-   margin-top: 2rem;
-   div {
-      display: inline-block;
+.font-after-video {
+   p{
+      font-size: 1rem;
+      color: rgb(65, 64, 64);
    }
 
-   a {
-      text-decoration: none;
-      color: $orange;
-      font-size: $fontsize;
+   .col {
+      padding: 0;
    }
 }
