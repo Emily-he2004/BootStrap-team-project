@@ -334,6 +334,7 @@
   }
 }
 .video-image-container .img-button-container {
+  margin-top: 4rem;
   position: relative;
 }
 .video-image-container .img-button-container p {
@@ -348,6 +349,7 @@
 }
 .video-image-container .img-button-container .font-video {
   color: black;
+  padding: 0;
 }
 .video-image-container .img-button-container img {
   width: 100%;
