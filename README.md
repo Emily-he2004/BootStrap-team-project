@@ -15,4 +15,5 @@ Contributors:
 - Dale Zheng
 - Kaia Sun
 - Emily He
-    Participants in the Front-End Web Development certification program, 35th intake, at BCIT Downtown Campus in Vancouver, BC.
+
+  Participants in the Front-End Web Development certification program, 35th intake, at BCIT Downtown Campus in Vancouver, BC.
