@@ -4,12 +4,12 @@ Explored the diverse applications of Bootstrap and SCSS in web development by un
 
 Delving into the versatile applications of Bootstrap and SCSS in web development through an educational initiative, our focus was on recreating an earlier version of the Audioengine website (https://audioengine.com/), ensuring adaptability across various viewport sizes.
 
-Key Objectives: 
+<strong>Key Objectives:</strong> 
 - Implementation of Bootstrap Components, Layouts, and Customization, seamlessly integrated with SCSS.
 - Emphasis on achieving responsiveness and design fidelity in alignment with provided references.
 - The remade references, including screenshots and videos, are organized in a dedicated folder.
 
-Contributors: 
+<strong>Contributors: </strong>
 - Wenjing Pan
 - Aysenur Demir
 - Dale Zheng
