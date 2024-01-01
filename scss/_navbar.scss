@@ -1,3 +1,4 @@
+$hoverColor: rgba(168, 168, 168, 0.442);
 
 .navbar{
     background-color: black;
@@ -5,56 +6,11 @@
     color: white;
 }
 
-.container-fluid-navbar{
-    display: flex;
-    flex-wrap: wrap;
-
-    width: 100%;
-    background-color: black;
-    padding: .8rem 0 .8rem 0;
-    justify-content: space-between;
-
-    .navbar-brand{
-        padding: .2rem 0 0 1rem;
-    }
-
-    .navbar-toggler{
-        padding: .2rem .8rem;  
-    }
-
-    .navbar-toggler svg{
-        fill: #fff;
-    }
-
-    .svg{
-        width: 2rem;
-        height: 2rem;
-    }
-
-    button{
-        color: white;
-    }
-
+@mixin navbar-icons{
     .navbar-toggler-icon{
         color: white;
     }
-
-    .navbar-nav{
-        padding: .4rem .4rem 0 .4rem;
-        margin: .5rem .4rem;
-        text-transform: uppercase;
-    }
-
-    .navbar-nav :hover{
-        background-color:rgba(168, 168, 168, 0.442);
-    }
-
-    .navbar-nav .nav-link{
-        color: white;
-        padding: .5rem 1rem;
-        font-size: 1rem;
-    }
-
+    
     .icon-navigations{
         display: flex;
         flex-wrap: nowrap;
@@ -75,23 +31,79 @@
     }
 }
 
+@mixin navbar-togglers{
+    .navbar-toggler{
+        padding: .2rem .8rem;  
+    }
+
+    .navbar-toggler svg{
+        fill: #fff;
+    }
+}
+
+.container-fluid-navbar{
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 100%;
+    background-color: black;
+    padding: .8rem 0 .8rem 0;
+    justify-content: space-between;
+
+    .navbar-brand{
+        padding: .2rem 0 0 1rem;
+    }
+
+    @include navbar-togglers;
+
+    .svg{
+        width: 2rem;
+        height: 2rem;
+    }
+
+    button{
+        color: white;
+    }
+
+    .navbar-nav{
+        padding: .4rem .4rem 0 .4rem;
+        margin: .5rem .4rem;
+        text-transform: uppercase;
+    }
+    
+    .navbar-nav :hover{
+        background-color: $hoverColor;
+    }
+    
+    .navbar-nav .nav-link{
+        color: white;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+    }
+
+    @include navbar-icons;
+}
+
+@mixin laptop-L-navbar{
+    .navbar-brand{
+        padding: 1rem 0 0 1rem;
+    }        
+
+    .navbar-options{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: right;
+    }
+}
 
 @media (min-width:1024px){
-
     
     .container-fluid-navbar{
         flex-wrap: nowrap;
         padding: .5rem 0;
 
-        .navbar-brand{
-            padding: 1rem 0 0 1rem;
-        }        
+        @include laptop-L-navbar;
 
-        .navbar-options{
-            display: flex;
-            flex-wrap: nowrap;
-            justify-content: right;
-        }
 
         // .navbar-expand-lg .navbar-collapse{
         //     display: flex;

@@ -29,9 +29,6 @@
 .container-fluid-navbar button {
   color: white;
 }
-.container-fluid-navbar .navbar-toggler-icon {
-  color: white;
-}
 .container-fluid-navbar .navbar-nav {
   padding: 0.4rem 0.4rem 0 0.4rem;
   margin: 0.5rem 0.4rem;
@@ -44,6 +41,9 @@
   color: white;
   padding: 0.5rem 1rem;
   font-size: 1rem;
+}
+.container-fluid-navbar .navbar-toggler-icon {
+  color: white;
 }
 .container-fluid-navbar .icon-navigations {
   display: flex;
