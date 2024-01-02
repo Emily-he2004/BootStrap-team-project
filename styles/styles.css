@@ -2,7 +2,7 @@
 .navbar {
   background-color: black;
   padding: 0;
-  color: white;
+  color: #ffffff;
 }
 
 .container-fluid-navbar {
@@ -20,14 +20,14 @@
   padding: 0.2rem 0.8rem;
 }
 .container-fluid-navbar .navbar-toggler svg {
-  fill: #fff;
+  fill: #ffffff;
 }
 .container-fluid-navbar .svg {
   width: 2rem;
   height: 2rem;
 }
 .container-fluid-navbar button {
-  color: white;
+  color: #ffffff;
 }
 .container-fluid-navbar .navbar-nav {
   padding: 0.4rem 0.4rem 0 0.4rem;
@@ -38,12 +38,12 @@
   background-color: rgba(168, 168, 168, 0.442);
 }
 .container-fluid-navbar .navbar-nav .nav-link {
-  color: white;
+  color: #ffffff;
   padding: 0.5rem 1rem;
   font-size: 1rem;
 }
 .container-fluid-navbar .navbar-toggler-icon {
-  color: white;
+  color: #ffffff;
 }
 .container-fluid-navbar .icon-navigations {
   display: flex;
@@ -52,7 +52,7 @@
   font-size: 1rem;
 }
 .container-fluid-navbar .icon-navigations svg {
-  fill: #fff;
+  fill: #ffffff;
 }
 .container-fluid-navbar .icon-nav-link-search {
   margin-left: 0.7rem;
@@ -79,7 +79,7 @@
   font-weight: 100;
   font-size: 2rem;
   margin: 0 0 1em 0;
-  color: black;
+  color: #242424;
   text-transform: uppercase;
   text-align: center;
 }
@@ -107,7 +107,7 @@
   padding: 0.5rem 0 0 1.5rem;
 }
 .bestseller-container button:hover {
-  background-color: orange;
+  background-color: #e68e00;
 }
 .bestseller-container button {
   position: sticky;
@@ -115,10 +115,10 @@
   left: 21rem;
   font-size: 0.8rem;
   border-radius: 0.3rem;
-  background-color: orange;
-  color: white;
+  background-color: #e68e00;
+  color: #ffffff;
   padding: 0.4rem 1rem;
-  border-color: orange;
+  border-color: #e68e00;
   text-transform: uppercase;
   margin: 0 0 1.6rem 0;
 }
@@ -355,7 +355,7 @@
   width: 100%;
 }
 .video-image-container .img-button-container .play-btn {
-  color: orange;
+  color: #e68e00;
   font-size: clamp(1rem, 18.5vw, 45rem);
   position: absolute;
   top: 50%;
@@ -388,7 +388,7 @@
   font-size: 1rem;
 }
 .video-image-container .video-container .modal-body .btn-close:hover {
-  background-color: orange;
+  background-color: #e68e00;
 }
 .video-image-container .video-container video {
   width: 100%;
@@ -402,7 +402,7 @@
 }
 .back-to-top a {
   text-decoration: none;
-  color: orange;
+  color: #e68e00;
   font-size: 1.5rem;
 }
 
@@ -478,7 +478,7 @@
 
 body {
   background-color: #ffffff;
-  color: #fff;
+  color: #ffffff;
 }
 
 h2 {
@@ -498,7 +498,7 @@ p {
 }
 
 .btn-shop {
-  color: #fff;
+  color: #ffffff;
   background-color: #e68e00;
   border: none;
   border-radius: 5px;

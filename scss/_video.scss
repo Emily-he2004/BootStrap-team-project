@@ -1,76 +1,72 @@
-@use 'variable' as *;
-
+@use "variable" as *;
 
 .video-image-container {
-   .img-button-container {
-      margin-top: 4rem;
-      position: relative;
+  .img-button-container {
+    margin-top: 4rem;
+    position: relative;
 
-      p {
-         font-size: clamp(1rem, 5vw, 10rem); 
-         font-weight: 700;
-         position: absolute;
-         top:15%;
-         left: 50%;
-         transform: translate(-50%, -50%);
-         width: 100%;
-         text-align: center;
+    p {
+      font-size: clamp(1rem, 5vw, 10rem);
+      font-weight: 700;
+      position: absolute;
+      top: 15%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      text-align: center;
+    }
+
+    .font-video {
+      color: black;
+      padding: 0;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .play-btn {
+      color: $btnColor;
+      font-size: clamp(1rem, 18.5vw, 45rem);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      &:active {
+        border-color: transparent;
       }
-      
-      .font-video {
-         color: black;
-         padding: 0;
+    }
+  }
+
+  .video-container {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+
+    .modal-body {
+      display: inline-flex;
+      .btn-close {
+        position: absolute;
+        z-index: 2;
+        background-image: none;
+        color: white;
+        background-color: black;
+        opacity: 1;
+        top: -0.9rem;
+        right: -0.5rem;
+        padding: 0.3rem 1rem 0.7rem;
+        border-radius: 0%;
+        width: 3rem;
+        font-size: 1rem;
+        &:hover {
+          background-color: $btnColor;
+        }
       }
+    }
 
-      img {
-         width: 100%;
-      }
-
-      .play-btn {
-         color: $orange;
-         font-size: clamp(1rem, 18.5vw, 45rem); 
-         position: absolute;
-         top: 50%;
-         left: 50%;
-         transform: translate(-50%, -50%);
-         
-         &:active {
-            border-color: transparent;
-         }
-
-      }
-   }
-
-   
-   .video-container {
-      max-width: 70%;
-      margin-left: auto;
-      margin-right: auto;
-      
-      .modal-body {
-            display: inline-flex;
-         .btn-close {
-            position: absolute;
-            z-index: 2;
-            background-image: none;
-            color: white;
-            background-color: black;
-            opacity: 1;
-            top: -0.9rem;
-            right: -0.5rem;
-            padding: 0.3rem 1rem 0.7rem;
-            border-radius: 0%;
-            width: 3rem;
-            font-size: 1rem;
-            &:hover {
-               background-color: $orange;
-            }
-         }         
-      }
-
-         video {
-            width: 100%;
-         }
-   }
+    video {
+      width: 100%;
+    }
+  }
 }
-

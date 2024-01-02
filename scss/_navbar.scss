@@ -1,120 +1,119 @@
+@use "variable" as *;
 $hoverColor: rgba(168, 168, 168, 0.442);
 
-.navbar{
-    background-color: black;
-    padding: 0;
-    color: white;
+.navbar {
+  background-color: black;
+  padding: 0;
+  color: $btn-text-color;
 }
 
-@mixin navbar-icons{
-    .navbar-toggler-icon{
-        color: white;
-    }
-    
-    .icon-navigations{
-        display: flex;
-        flex-wrap: nowrap;
-        margin: 0rem 1.5rem 0 2.2rem;
-        font-size: 1rem;
-    }
+@mixin navbar-icons {
+  .navbar-toggler-icon {
+    color: $btn-text-color;
+  }
 
-    .icon-navigations svg{
-        fill: #fff;
-    }
-
-    .icon-nav-link-search{
-        margin-left: .7rem;
-    }
-
-    .icon-nav-link-cart{
-        margin-left: .6rem;
-    }
-}
-
-@mixin navbar-togglers{
-    .navbar-toggler{
-        padding: .2rem .8rem;  
-    }
-
-    .navbar-toggler svg{
-        fill: #fff;
-    }
-}
-
-.container-fluid-navbar{
+  .icon-navigations {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    margin: 0rem 1.5rem 0 2.2rem;
+    font-size: 1rem;
+  }
 
-    width: 100%;
-    background-color: black;
-    padding: .8rem 0 .8rem 0;
-    justify-content: space-between;
+  .icon-navigations svg {
+    fill: $bgc;
+  }
 
-    .navbar-brand{
-        padding: .2rem 0 0 1rem;
-    }
+  .icon-nav-link-search {
+    margin-left: 0.7rem;
+  }
 
-    @include navbar-togglers;
-
-    .svg{
-        width: 2rem;
-        height: 2rem;
-    }
-
-    button{
-        color: white;
-    }
-
-    .navbar-nav{
-        padding: .4rem .4rem 0 .4rem;
-        margin: .5rem .4rem;
-        text-transform: uppercase;
-    }
-    
-    .navbar-nav :hover{
-        background-color: $hoverColor;
-    }
-    
-    .navbar-nav .nav-link{
-        color: white;
-        padding: .5rem 1rem;
-        font-size: 1rem;
-    }
-
-    @include navbar-icons;
+  .icon-nav-link-cart {
+    margin-left: 0.6rem;
+  }
 }
 
-@mixin laptop-L-navbar{
-    .navbar-brand{
-        padding: 1rem 0 0 1rem;
-    }        
+@mixin navbar-togglers {
+  .navbar-toggler {
+    padding: 0.2rem 0.8rem;
+  }
 
-    .navbar-options{
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: right;
-    }
+  .navbar-toggler svg {
+    fill: $bgc;
+  }
 }
 
-@media (min-width:1024px){
-    
-    .container-fluid-navbar{
-        flex-wrap: nowrap;
-        padding: .5rem 0;
+.container-fluid-navbar {
+  display: flex;
+  flex-wrap: wrap;
 
-        @include laptop-L-navbar;
+  width: 100%;
+  background-color: black;
+  padding: 0.8rem 0 0.8rem 0;
+  justify-content: space-between;
 
+  .navbar-brand {
+    padding: 0.2rem 0 0 1rem;
+  }
 
-        // .navbar-expand-lg .navbar-collapse{
-        //     display: flex;
-        //     flex-wrap: nowrap;
-        //     justify-content: right;
-        // }
-    
-        // .navbar-expand-lg .navbar-collapse .navbar-nav{
-        //     padding: 0;
-        //     margin: 0;
-        //     text-transform: uppercase;
-        // }
-    }
+  @include navbar-togglers;
+
+  .svg {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  button {
+    color: $btn-text-color;
+  }
+
+  .navbar-nav {
+    padding: 0.4rem 0.4rem 0 0.4rem;
+    margin: 0.5rem 0.4rem;
+    text-transform: uppercase;
+  }
+
+  .navbar-nav :hover {
+    background-color: $hoverColor;
+  }
+
+  .navbar-nav .nav-link {
+    color: $btn-text-color;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+
+  @include navbar-icons;
+}
+
+@mixin laptop-L-navbar {
+  .navbar-brand {
+    padding: 1rem 0 0 1rem;
+  }
+
+  .navbar-options {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: right;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-fluid-navbar {
+    flex-wrap: nowrap;
+    padding: 0.5rem 0;
+
+    @include laptop-L-navbar;
+
+    // .navbar-expand-lg .navbar-collapse{
+    //     display: flex;
+    //     flex-wrap: nowrap;
+    //     justify-content: right;
+    // }
+
+    // .navbar-expand-lg .navbar-collapse .navbar-nav{
+    //     padding: 0;
+    //     margin: 0;
+    //     text-transform: uppercase;
+    // }
+  }
 }
