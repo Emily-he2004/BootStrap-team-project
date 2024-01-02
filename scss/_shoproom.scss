@@ -1,70 +1,71 @@
-$bgc: #ffffff;
-$btnColor: #e68e00;
-$textC: #242424;
-$bgShop: #999999ab;
+// _shoproom.scss
 
-//Fonts
-// $body-fonts: ;
-$btn-text-color: #fff;
-$content-title: #4e4e4e;
-$content-color: #908b8b;
+// Import variables and mixins
+@import "variable";
+@import "mixins";
 
-@mixin font-awesome-arrow($unicode, $color: $btnColor, $size: 40px) {
-  content: $unicode;
-  font-family: "FontAwesome";
-  font-size: $size;
-  color: $color;
-  font-weight: 100;
+.image-container {
+  position: relative;
 }
 
-// Define mixin for common styles in the logo slider
-@mixin logo-slider-styles {
-  margin: 20px 0;
-  img {
-    width: 100%;
-    height: auto;
-  }
-  .slick-slide {
-    margin: 0 2em;
-    padding-top: 20px;
-  }
+.image-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
 }
 
-.title {
-  text-align: center;
-  font-weight: 100;
-  font-size: 2em;
-  margin: 0 0 1em 0;
-  color: $content-color;
+.image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.image-container h5 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  word-wrap: break-word;
   text-transform: uppercase;
+  color: $bgc;
+  text-align: center;
+  font-size: 1rem;
+  overflow: hidden;
 }
-
+// Shop Room styles
 .shop-room {
   @include logo-slider-styles;
-}
 
-.shop-room .slick-next::before {
-  @include font-awesome-arrow("\f105");
-}
+  .slick-next::before {
+    @include font-awesome-arrow("\f105");
+  }
 
-.shop-room .slick-prev::before {
-  @include font-awesome-arrow("\f104");
-}
+  .slick-prev::before {
+    @include font-awesome-arrow("\f104");
+  }
 
-@media (max-width: 576px) {
-  .shop-room {
+  // Other Shop Room styles
+  @media (max-width: 576px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     height: 1000px;
+
+    > div {
+      flex: 1 0 50%;
+      box-sizing: border-box;
+      padding: 1rem;
+    }
   }
-  .shop-room > div {
-    flex: 1 0 50%;
-    box-sizing: border-box;
-    padding: 1rem;
-  }
-  .title {
-    font-size: 1.5em;
-  }
+}
+.title {
+  @include title-styles;
 }

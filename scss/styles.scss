@@ -7,11 +7,14 @@
 @use "footer";
 @use "banner";
 @use "shoproom";
+@use "mixins";
+
+@import "variable";
 
 body {
-  background-color: white;
+  background-color: $bgc;
   font-size: 1.5rem;
-  color: black;
+  color: $textC;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
