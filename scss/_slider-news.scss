@@ -1,3 +1,5 @@
+@use "mixins" as *;
+
 @mixin font-awesome-arrow($unicode, $color: #fc851e, $size: 40px) {
   content: $unicode;
   font-family: "FontAwesome";
@@ -31,7 +33,7 @@
   @include font-awesome-arrow("\f104");
 }
 
-@media (max-width: 576px) {
+@include mqMax(576px) {
   .logo-slider {
     display: flex;
     flex-direction: column;

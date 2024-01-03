@@ -1,4 +1,6 @@
 @use "variable" as *;
+@use "mixins" as *;
+
 
 .bestseller-h2 {
   font-weight: 100;
@@ -58,7 +60,7 @@
   }
 }
 
-@media (min-width: 450px) {
+@include mqMin(450px) {
   .bestseller-h2 {
     text-align: center;
     margin-top: 2.5rem;
@@ -113,7 +115,7 @@
   }
 }
 
-@media (min-width: 767px) and (max-width: 1440px) {
+@include mqMinMax(767px, 1440px) {
   .bestseller-h2 {
     margin-top: 3.5rem;
   }

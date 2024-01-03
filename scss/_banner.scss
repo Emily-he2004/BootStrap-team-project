@@ -35,7 +35,7 @@ p {
   font-size: 1rem;
 }
 
-@media (min-width: 850px) {
+@include mqMin(850px) {
   .slide-title {
     font-size: 2rem;
   }
@@ -45,7 +45,7 @@ p {
   }
 }
 
-@media (min-width: 1000px) {
+@include mqMin(1000px) {
   .slide-title {
     font-size: 3rem;
   }
@@ -89,7 +89,7 @@ p {
   order: 1;
 }
 
-@media (min-width: 446px) {
+@include mqMin(446px) {
   .carousel-control-next-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23e68e00' width='80' height='80'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z' stroke='%23e68e00' stroke-width='2'/%3e%3c/svg%3e");
   }

@@ -1,4 +1,6 @@
 @use "variable" as *;
+@use "mixins" as *;
+
 
 .back-to-top {
   margin-top: 2rem;
@@ -17,7 +19,7 @@
   max-width: 1400px;
   padding: 2rem 0;
 
-  @media (min-width: 510px) {
+  @include mqMin(510px) {
     padding: 3rem 0;
   }
 
@@ -73,13 +75,13 @@
 
   .footer-content {
     .row {
-      @media (min-width: 360px) {
+      @include mqMin(360px) {
         .col {
           flex: 0 0 50%;
         }
       }
 
-      @media (min-width: 520px) {
+      @include mqMin(520px) {
         .col {
           flex: 0 0 25%;
         }

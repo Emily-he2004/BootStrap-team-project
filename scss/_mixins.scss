@@ -33,3 +33,31 @@
   color: $content-color;
   text-transform: uppercase;
 }
+
+// Mixin: media query for min-width
+@mixin mqMin($w){
+  @media (min-width: $w){
+    @content;
+  }
+}
+  
+// Mixin: media query for max-width
+@mixin mqMax($w){
+  @media (max-width: $w){
+    @content;
+  }
+}
+
+// Mixin: media query for min-width and max-width
+@mixin mqMinMax($minW, $maxW) {
+  @media (min-width: $minW) and (max-width: $maxW) {
+    @content;
+  }
+}
+  
+// Mixin: absolute horizontally centered
+@mixin centerAbsolute {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

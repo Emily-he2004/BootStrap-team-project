@@ -1,17 +1,22 @@
 @use "variable" as *;
+@use "mixins" as *;
+
 
 .video-image-container {
+  @include mqMin(1400px) {
+    max-width: 1320px;
+    margin: auto;
+  }
+
   .img-button-container {
     margin-top: 4rem;
     position: relative;
 
     p {
-      font-size: clamp(1rem, 5vw, 10rem);
+      font-size: clamp(2rem, 4vw, 10rem);
       font-weight: 700;
-      position: absolute;
+      @include centerAbsolute;
       top: 15%;
-      left: 50%;
-      transform: translate(-50%, -50%);
       width: 100%;
       text-align: center;
     }
@@ -27,11 +32,9 @@
 
     .play-btn {
       color: $btnColor;
-      font-size: clamp(1rem, 18.5vw, 45rem);
-      position: absolute;
+      font-size: clamp(1rem, 12.5vw, 35rem);
+      @include centerAbsolute;
       top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
 
       &:active {
         border-color: transparent;

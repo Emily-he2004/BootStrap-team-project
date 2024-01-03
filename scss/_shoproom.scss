@@ -52,7 +52,7 @@
   }
 
   // Other Shop Room styles
-  @media (max-width: 576px) {
+  @include mqMax(576px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

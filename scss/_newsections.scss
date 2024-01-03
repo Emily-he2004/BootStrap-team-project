@@ -1,3 +1,6 @@
+@use "mixins" as *;
+
+
 // desktop 端，以及一些style
 // flex里的各个格子，将他们的位置作为母级
 .items{
@@ -57,7 +60,7 @@
 
 // ----------------------------------------------------
 // 手机端
-@media (max-width: 32.8125rem){
+@include mqMax(32.8125rem){
     // 显示手机端图片
     .mobile-phone{
         display: block;
@@ -108,7 +111,7 @@
 
     }
 // 最下面商品的样式有3个图片，分别是平板，电脑，以及手机。
-    @media (min-width: 32.8125rem) and (max-width: 50rem){
+    @include mqMinMax(32.8125rem, 50rem) {
         .tablet{
             display: block;
         }
