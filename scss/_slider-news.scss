@@ -1,6 +1,6 @@
 @use "mixins" as *;
 
-@mixin font-awesome-arrow($unicode, $color: #fc851e, $size: 40px) {
+@mixin font-awesome-arrow($unicode, $color: #e68e00, $size: 40px) {
   content: $unicode;
   font-family: "FontAwesome";
   font-size: $size;
